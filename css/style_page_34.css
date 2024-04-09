@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    font-family: "Lato", sans-serif;
+}
+body{
+    margin: 29px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 760px;
+    border: solid 1px;
+}
+.left button{
+    color: white;
+    background-color: rgba(26, 25, 25, 0.925);
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 15px 50px;
+    box-shadow: black 8px 8px 0 0;
+    margin-bottom: 40px;
+}
+h1{
+    font-size: 70px;
+    margin: 0;
+}
+h2{
+    font-size: 50px;
+    margin: 0;
+}
+.titulo{
+    grid-column: span 2;
+    text-align: center;
+    border: solid 1px black;
+}
+.left{
+    border: 1px solid black;
+    padding-top: 60px;
+    padding-left: 50px;
+}
+.left p{
+    font-size: 25px;
+}
+.barra{
+    display: flex;
+    border: solid 2px black ;
+    border-radius: 30px;
+    margin: 20px 100px 20px 0;
+    padding: 20px;
+    justify-content: space-around;
+}
+h3{
+    font-size: 25px;
+    margin: 0;
+}
+.text p{
+    font-size: 20px;
+    margin: 0;
+}
+.cuadro img{
+    margin: 30px 0;
+}
+.right{
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+    grid-template-rows: 259px 262px 259px;
+    border: solid 1px black;
+}
+.vacio{
+    grid-row: span 3;
+}
+.img1 img{
+    position: absolute;
+}
+.img1 p{
+    font-size: 25px;
+    margin: 73px;
+}
+.img3{
+    grid-row: span 2;
+}
+@media (min-width:1400px) {
+    h3{
+        font-size: 30px;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: 55% 655px;
+        grid-template-rows: 100px 780px;
+        border: solid 0px;
+        margin-left: 70px;
+    }
+    .right{
+        display: grid;
+        grid-template-columns: 1fr 21px 1fr;
+        grid-template-rows: 269px 272px 269px;
+        border: solid 1px black;
+    }
+   .img3 img{
+        width: 326px;
+        height: 509px;
+   }
+}
+@media (max-width:768px) {
+    body{
+        margin: 5px;
+    }
+    .titulo{
+        grid-column: span 1;
+    }
+    h1{
+        font-size: 65px;
+    }
+    .container{
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 1360px 1560px;
+    }
+    .barra{
+        flex-direction: column;
+        margin: 20px 40px 20px 0;
+    }
+    .cuadro{
+        margin: 15px 0;
+    }
+    .right{
+        grid-template-columns: 100%;
+        grid-template-rows: 259px;
+    }
+    .vacio{
+        grid-row: span 0;
+    }
+}
