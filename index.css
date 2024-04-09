@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --button-neon: #63E1E1;
+}
+
+body {
+    background-color: #2f2f2f;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 5vw;
+    color: #fff
+}
+
+.links-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: auto;
+    min-height: 8rem;
+    min-width: 10rem;
+    justify-items: center;
+    margin-top: 5rem;
+    gap: 20px;
+    
+
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #65cae4;
+        width: 12vw;
+        height: 14vw;
+        border-radius: 30px;
+        font-size: 4vw;
+        text-decoration: none;
+        color: white;
+    }
+
+    .landing21, .landing22, .landing23, .landing24, .landing25, .landing26, .landing27, .landing28, .landing29, .landing30, .landing31, .landing32, .landing33, .landing34, .landing35, .landing36, .landing37, .landing38,.landing39, .landing40 {
+        display: none;
+    }
+
+    a:hover {
+        transition: 0.4s ease;
+        transform: scale(1.1);
+        box-shadow: 0 0 30px var(--button-neon);
+    }
+
+    
+}
